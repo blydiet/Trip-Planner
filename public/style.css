@@ -10,5 +10,27 @@
 
   #map {
     height: 100vh;
-    width: 100vw;
+    width: 75vw;
   }
+  #navBox{
+    right: 0;
+    width: 25%;
+    padding: 5%;
+    min-width: 300px;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    background: #C1B5AD;
+  }
+  select{
+    width: 100px;
+  }
+  #dropDownBox{
+    padding: 10px;
+    
+  }
+
+  /* #itineray{
+    
+  } */

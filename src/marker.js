@@ -8,6 +8,8 @@ const iconURLs = {
 
 const buildMarker = function(type, coords) {
     // Your Code Here
+
+new mapboxgl.Marker(iconURLs[type]).setLngLat(coords).addTo(map);
 };
 
 module.exports = buildMarker;

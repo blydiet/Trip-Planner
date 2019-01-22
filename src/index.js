@@ -12,9 +12,9 @@ center: [-74.009, 40.705], // FullStack NY coordinates; alternatively, use [-87.
 style: 'mapbox://styles/mapbox/streets-v11'
 });
 
-const markerDomEl = document.createElement("div"); // Create a new, detached DIV
-markerDomEl.style.width = "32px";
-markerDomEl.style.height = "39px";
-markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
+const buildMarker = require("./marker");
 
-new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
+const marker = buildMarker("activities", [-74.009151, 40.705086]); // or [-87.6354, 41.8885]
+marker.addTo(map);
+
+//new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
